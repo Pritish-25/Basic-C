@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main () {
+    char a;
+    printf("Enter a alphabet : ");
+    scanf("%c", &a);
+    printf("The alphabet is %c \n", a);
+    int b;
+    printf("Enter a number : ");
+    scanf("%d", &b);
+    printf("Number is %d \n", b);
+    float c;
+    printf("Enter a decimal number : ");
+    scanf("%f", &c);
+    printf("The given decimal numer is %f", c); 
+    return 0;
+}
