@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b,m,n;
+    printf("Enter the dimensions of both the matrix :");
+    scanf("%d %d",&a,&b);
+    scanf("%d %d",&m,&n);
+    if (a != m || b != n)
+    printf("Unequal matrix");
+    else
+    {
+        int arr[a][b];
+        printf("Enter the first matrix :\n");
+        for(int i=0;i<a;i++)
+        {
+            for(int j=0;j<b;j++)
+            {
+                scanf("%d",&arr[i][j]);
+            }
+        }
+        int arr2[a][b],k=0;
+        printf("Enter the second matrix :\n");
+        for(int i=0;i<a;i++)
+        {
+            for(int j=0;j<b;j++)
+            {
+                scanf("%d",&arr2[i][j]);
+            }
+        }
+        for(int i=0;i<a;i++)
+        {
+            for(int j=0;j<b;j++)
+            {
+                if (arr[i][j] != arr2[i][j])
+                {
+                    k++;
+                    break;
+                }
+            }
+        }
+        if (k==0)
+        printf("Equal matrix");
+        else 
+        printf("Unequal matrix");
+    }
+    
+
+    return 0;
+}
+
