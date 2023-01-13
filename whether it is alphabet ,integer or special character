@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    char c;
+    
+       printf("enter  a alphabet\n");
+       scanf("%c",&c);
+       int n =c;
+       
+    if((n>=65&&n<=90)||(n>=97&&n<=122))   
+    printf("alphabet");
+
+    else if(n>=48&&n<=57)
+    printf("integer");
+
+    else
+    printf("special character");
+
+
+
+        
+
+}
