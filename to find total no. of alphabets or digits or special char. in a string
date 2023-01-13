@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    char s[100];
+    scanf("%s",s);
+    int alph=0,digit=0,special=0;
+    for(int i=0;s[i];i++)
+    {
+        if((s[i] >=65 && s[i] <=90) || s[i] >=97 && s[i] <=122)
+        alph++;
+        else if(s[i] >= 48 && s[i] <= 57)
+        digit++;
+        else
+        special++;
+    }
+    printf("No. of alphabets are %d\n",alph);
+    printf("No. of digits are %d\n",digit);
+    printf("No. of special characters are %d\n",special);
+    return 0;
+}
